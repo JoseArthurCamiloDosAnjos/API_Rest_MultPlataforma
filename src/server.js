@@ -22,8 +22,6 @@ const pool = mysql.createPool({
 
 async function testConnection() {
     try {
-        
-
         // Tenta obter uma conexão do pool
         const connection = await pool.getConnection();
         console.log('✅ Conexão estabelecida com sucesso!');
@@ -34,8 +32,6 @@ async function testConnection() {
         console.error('❌ Erro ao conectar ao banco de dados:', error.message);
     }
 }
-
-//testConnection();
 
 app.use(json());
 
