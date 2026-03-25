@@ -65,3 +65,8 @@ INSERT INTO users (`userName`, `userPassword`) VALUES
 ```
 
 para sincrominar o repositorio remoto
+
+Padronização nomes branch
+| tipo | descrição
+|-----|------
+|create/[acao] | para novos implementações
