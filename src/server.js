@@ -2,9 +2,11 @@
 import express, { json } from "express";
 import os from 'os';
 import swRoutes from "./view/routes.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 // import {createDb } from "./databases/createDatabase.js"
-const Port = 3500;
+const Port = process.env.API_PORT || 3500;
 const app = express();
 
 app.use(json());
