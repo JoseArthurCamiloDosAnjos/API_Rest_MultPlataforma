@@ -1,6 +1,6 @@
 import { pool } from "../databases/connectionMysql.js"
 
-export async function Get ( req, res)  {
+export async function Get ()  {
     try {
         const [results, fields] = await pool.execute(
             'SELECT * FROM `users` ORDER BY `userName` '

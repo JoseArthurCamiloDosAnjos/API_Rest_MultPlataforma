@@ -1,4 +1,4 @@
-@host = http://192.168.10.48
+@host = http://localHost
 @port = 3500
 @endpoint = users
 
@@ -19,7 +19,7 @@ Content-Type: application/json; charset=utf-8
 {
       "userName": "provara022@fatec.com",
       "userPassword": "022"
-    }
+}
 
 ###
 
